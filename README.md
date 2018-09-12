@@ -2,7 +2,7 @@
 
 Ce répository est le résultat du tutoriel sur la création d'une SPA (Single Page Application) avec gestion de l'authentification par rôles réalisé avec Laravel et Vue.js
 
-Le tutoriel est disponilbe [ici](https://medium.com/@ripoche.b/cr%C3%A9er-une-spa-avec-authentification-par-r%C3%B4les-avec-laravel-et-vue-js-e69782ac6896).
+Le tutoriel est disponible [ici](https://medium.com/@ripoche.b/cr%C3%A9er-une-spa-avec-authentification-par-r%C3%B4les-avec-laravel-et-vue-js-e69782ac6896).
 
 ## Prerequis
 
