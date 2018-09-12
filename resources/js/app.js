@@ -1,22 +1,30 @@
+import 'es6-promise/auto'
+import axios from 'axios'
+import './bootstrap'
+import Vue from 'vue'
+import VueAuth from '@websanova/vue-auth'
+import VueAxios from 'vue-axios'
+import VueRouter from 'vue-router'
+import Index from './Index'
+import auth from './auth'
+import router from './router'
 
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
+// Set Vue globally
+window.Vue = Vue
 
-require('./bootstrap');
+// Set Vue router
+Vue.router = router
+Vue.use(VueRouter)
 
-window.Vue = require('vue');
+// Set Vue authentication
+Vue.use(VueAxios, axios)
+axios.defaults.baseURL = `http://127.0.0.1:8000/api`
+Vue.use(VueAuth, auth)
 
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
-
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+// Load Index
+Vue.component('index', Index)
 
 const app = new Vue({
-    el: '#app'
+  el: '#app',
+  router
 });
