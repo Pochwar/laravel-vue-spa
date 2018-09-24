@@ -25,7 +25,3 @@ This tutorial is available [here](https://medium.com/@ripoche.b/create-a-spa-wit
 - Build front with `npm run dev`
 
 If you did'nt set a virtual host, launch application with the `php artisan serve` command. By default, application will be served at `http://127.0.0.1:8000`
-
-// !nocommit
-
-
