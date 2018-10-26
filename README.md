@@ -26,6 +26,10 @@ This tutorial is available [here](https://medium.com/@ripoche.b/create-a-spa-wit
 
 If you did'nt set a virtual host, launch application with the `php artisan serve` command. By default, application will be served at `http://127.0.0.1:8000`
 
+## Configuration
+
+You can change the length of time (in minutes) that the token will be valid for by changin the `JWT_TTL` value in the `.env` file.
+
 ## Usage
 
 Log as admin with `admin@test.com:admin` or as user with `user@test.com:secret`
